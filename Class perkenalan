@@ -1,0 +1,32 @@
+class Pengunjung:
+    def perkenalan(self):
+        print("Halo, nama saya nida.")
+        print("Saya ingin membaca buku.")
+
+    def bertanya(self, nama):
+        print("Permisi", nama, "di mana tempat buku cerita?")
+
+class Petugas:
+    def perkenalan(self):
+        print("Halo, saya petugas perpustakaan.")
+        print("Selamat datang di perpustakaan.")
+
+    def menjawab(self):
+        print("Buku cerita ada di rak sebelah kanan.")
+
+# Membuat object
+pengunjung1 = Pengunjung()
+petugas1 = Petugas()
+
+print("=== PERKENALAN DI PERPUSTAKAAN ===")
+pengunjung1.perkenalan()
+petugas1.perkenalan()
+
+print("\n=== PERCAKAPAN DI PERPUSTAKAAN ===")
+pengunjung1.bertanya("Pak")
+petugas1.menjawab()
+
+print("\n=== MEMINJAM BUKU ===")
+print("nida memilih buku cerita.")
+print("nida meminjam satu buku.")
+print("Terima kasih, Pak!")
